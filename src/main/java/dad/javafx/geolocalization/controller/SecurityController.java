@@ -9,13 +9,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.GridPane;
 
-public class ConnectionController implements Initializable {
-	
+public class SecurityController implements Initializable {
+
 	@FXML
 	private GridPane view;
 
-	public ConnectionController() throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/conectionFXML.fxml"));
+	public SecurityController() throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/securityFXML.fxml"));
 		loader.setController(this);  //Este será nuestro controlador
 		loader.load();
 	}

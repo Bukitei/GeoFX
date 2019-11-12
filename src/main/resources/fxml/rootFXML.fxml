@@ -13,7 +13,7 @@
 
 <VBox id="view" fx:id="view" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0" spacing="10.0" VBox.vgrow="ALWAYS">
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0" spacing="10.0">
          <children>
             <ImageView fitHeight="35.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -27,17 +27,17 @@
       </HBox>
       <TabPane id="tab" fx:id="tab" prefHeight="345.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
         <tabs>
-          <Tab text="Location">
+          <Tab fx:id="Location" text="Location">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
-          <Tab text="Connection">
+          <Tab fx:id="Connection" text="Connection">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
-          <Tab text="Security">
+          <Tab fx:id="Security" text="Security">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>

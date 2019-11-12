@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -37,7 +36,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label text="?" textFill="#908c8c">
+            <Label id="latitude" fx:id="latitude" text="?" textFill="#908c8c">
                <font>
                   <Font size="18.0" />
                </font>
@@ -50,7 +49,7 @@
                <font>
                   <Font name="Corbel Bold" size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#6b6868">
+            <Label id="longtitude" fx:id="longtitude" text="?" textFill="#6b6868">
                <font>
                   <Font name="Corbel" size="20.0" />
                </font></Label>
@@ -63,11 +62,13 @@
                   <Label text="CITY, STATE">
                      <font>
                         <Font name="Corbel" size="15.0" />
-                     </font></Label>
-                  <Label text="Label" textFill="#6f6a6a">
+                     </font>
+                  </Label>
+                  <Label id="city" fx:id="city" text="?" textFill="#6f6a6a">
                      <font>
                         <Font size="17.0" />
-                     </font></Label>
+                     </font>
+                  </Label>
                </children>
             </VBox>
          </children>
@@ -78,7 +79,7 @@
                <font>
                   <Font name="Corbel" size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#686464">
+            <Label id="zip" fx:id="zip" text="?" textFill="#686464">
                <font>
                   <Font size="18.0" />
                </font></Label>
@@ -90,7 +91,7 @@
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#686464">
+            <Label id="language" fx:id="language" text="?" textFill="#686464">
                <font>
                   <Font size="18.0" />
                </font></Label>
@@ -102,7 +103,7 @@
                <font>
                   <Font name="Corbel" size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#615c5c">
+            <Label id="time" fx:id="time" text="?" textFill="#615c5c">
                <font>
                   <Font name="Corbel" size="18.0" />
                </font></Label>
@@ -114,7 +115,7 @@
                <font>
                   <Font name="Corbel" size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#5e5a5a">
+            <Label id="calling" fx:id="calling" text="?" textFill="#5e5a5a">
                <font>
                   <Font name="Corbel" size="18.0" />
                </font></Label>
@@ -126,7 +127,7 @@
                <font>
                   <Font name="Corbel" size="15.0" />
                </font></Label>
-            <Label text="?" textFill="#575151">
+            <Label id="currency" fx:id="currency" text="?" textFill="#575151">
                <font>
                   <Font name="Corbel" size="18.0" />
                </font></Label>
@@ -134,16 +135,13 @@
       </VBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="5" GridPane.rowIndex="2">
          <children>
-            <ImageView fitHeight="50.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Downloads/1200px-Flag_of_Spain.svg.png" />
-               </image></ImageView>
+            <ImageView fx:id="imageV" fitHeight="50.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" />
             <Label prefHeight="29.0" prefWidth="168.0" text="IP Location:">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label prefHeight="26.0" prefWidth="98.0" text="?">
+            <Label id="ip" fx:id="ip" prefHeight="26.0" prefWidth="98.0" text="?">
                <font>
                   <Font name="Corbel Bold" size="18.0" />
                </font></Label>
